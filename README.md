@@ -4,18 +4,35 @@ The dataset contains 9358 instances of hourly averaged responses from an array o
 This dataset can be used exclusively for research purposes. Commercial purposes are fully excluded.
 
 ## Attribute Information:
-0 Date (DD/MM/YYYY)
-1 Time (HH.MM.SS)
-2 True hourly averaged concentration CO in mg/m^3 (reference analyzer)
-3 PT08.S1 (tin oxide) hourly averaged sensor response (nominally CO targeted)
-4 True hourly averaged overall Non Metanic HydroCarbons concentration in microg/m^3 (reference analyzer)
-5 True hourly averaged Benzene concentration in microg/m^3 (reference analyzer)
-6 PT08.S2 (titania) hourly averaged sensor response (nominally NMHC targeted)
-7 True hourly averaged NOx concentration in ppb (reference analyzer)
-8 PT08.S3 (tungsten oxide) hourly averaged sensor response (nominally NOx targeted)
-9 True hourly averaged NO2 concentration in microg/m^3 (reference analyzer)
-10 PT08.S4 (tungsten oxide) hourly averaged sensor response (nominally NO2 targeted)
-11 PT08.S5 (indium oxide) hourly averaged sensor response (nominally O3 targeted)
-12 Temperature in Â°C
-13 Relative Humidity (%)
-14 AH Absolute Humidity
+0 Date (DD/MM/YYYY)<br />
+1 Time (HH.MM.SS)<br />
+2 True hourly averaged concentration CO in mg/m^3 (reference analyzer)<br />
+3 PT08.S1 (tin oxide) hourly averaged sensor response (nominally CO targeted)<br />
+4 True hourly averaged overall Non Metanic HydroCarbons concentration in microg/m^3 (reference analyzer)<br />
+5 True hourly averaged Benzene concentration in microg/m^3 (reference analyzer)<br />
+6 PT08.S2 (titania) hourly averaged sensor response (nominally NMHC targeted)<br />
+7 True hourly averaged NOx concentration in ppb (reference analyzer)<br />
+8 PT08.S3 (tungsten oxide) hourly averaged sensor response (nominally NOx targeted)<br />
+9 True hourly averaged NO2 concentration in microg/m^3 (reference analyzer)<br />
+10 PT08.S4 (tungsten oxide) hourly averaged sensor response (nominally NO2 targeted)<br />
+11 PT08.S5 (indium oxide) hourly averaged sensor response (nominally O3 targeted)<br />
+12 Temperature in Â°C<br />
+13 Relative Humidity (%)<br />
+14 AH Absolute Humidity<br />
+
+## Task:
+Task is to Train the MultiVarient and TimeSeries Model.
+
+## Steps To Train the Model:
+1.Importing the library<br />
+2.Importing the dataset<br />
+3.Encoding the data and time object<br />
+4.Droping the unwanted coloumn<br />
+5.Finding the Missing Value<br />
+6.Checking for Null Values<br />
+7.Encoding the Categorical data<br />
+8.spliting the dataset<br />
+9.Feature Scaling<br />
+10.Training the model<br />
+11.Predecting the Model<br />
+12.checking the R-Square Value<br />
